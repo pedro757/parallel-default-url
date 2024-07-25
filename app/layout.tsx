@@ -1,8 +1,11 @@
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, mymodal }) {
   return (
     <html>
       <head />
-      <body>{children}</body>
+      <body>
+        {mymodal}
+        {children}
+      </body>
     </html>
   );
 }
